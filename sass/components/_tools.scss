@@ -6,6 +6,8 @@
     background-repeat: no-repeat;
 }
 
+
+
 .tools__title{
     max-width: 462px;
     margin: 0 auto;
@@ -16,13 +18,40 @@
 .tools__button{
     margin-top: 60px;
     text-align: center;
+    @include media-mobile{
+        margin-top: 0;
+    }
 }
 
 //Tool block
+.tool-wrapper{
+    @include media-tablet{
+        flex-wrap: wrap;
+        >.tool{
+            flex-basis: 43%;
+        }
+    }
+    @include media-mobile{
+        flex-wrap: wrap;
+        >.tool{
+            flex-basis: 100%;
+            margin-bottom: 47px;
+        }
+    }
+}
+
+.tool{
+    @include media-tablet{
+        text-align: center;
+    }
+}
 .tool__title{
     margin: 0 0 26px;
 }
 
+.tool__text{
+    
+}
 .tool__icon{
     margin-bottom: 30px;
 }
