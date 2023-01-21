@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "style": "sass --watch sass/style.scss sass/style.css",
+    "build":"webpack",
+    "style": "sass --watch src/sass/style.scss src/sass/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/kovzanok/Friday-Live-Coding/issues"
   },
-  "homepage": "https://github.com/kovzanok/Friday-Live-Coding#readme"
+  "homepage": "https://github.com/kovzanok/Friday-Live-Coding#readme",
+  "dependencies": {
+    "webpack": "^5.75.0"
+  }
 }
